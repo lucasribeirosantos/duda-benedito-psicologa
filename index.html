@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maria Eduarda Benedito · Psicóloga — Psicoterapia com leveza</title>
+<meta name="description" content="Psicoterapia e trabalho analítico com acolhimento, no seu tempo e sem julgamentos. Maria Eduarda Benedito · Psicóloga · CRP 04/72818. Atendimento online e presencial." />
+<meta property="og:title" content="Maria Eduarda Benedito · Psicóloga" />
+<meta property="og:description" content="Um lugar tranquilo para cuidar de quem você é. Psicoterapia com leveza, no seu tempo." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/png" href="assets/bird.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Mulish:ital,wght@0,300..800;1,400..600&family=Sacramento&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__sky">
+    <span class="loader__cloud loader__cloud--1"></span>
+    <span class="loader__cloud loader__cloud--2"></span>
+    <span class="loader__cloud loader__cloud--3"></span>
+  </div>
+  <div class="loader__flight" id="loaderFlight">
+    <span class="loader__dots" id="loaderDots"></span>
+    <img class="loader__bird" id="loaderBird" src="assets/bird.png" alt="" />
+  </div>
+  <p class="loader__word" id="loaderWord">respire</p>
+</div>
+
+<!-- ===================== SCROLL FLIGHT (signature animation) ===================== -->
+<svg class="flightpath" id="flightpath" aria-hidden="true" preserveAspectRatio="xMidYMin meet">
+  <path id="routeBase" class="flightpath__base" fill="none" />
+  <path id="routeLit" class="flightpath__lit" fill="none" />
+  <image id="routeBird" href="assets/bird.png" width="56" height="58" />
+</svg>
+
+<!-- ===================== HEADER ===================== -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Maria Eduarda Benedito — início">
+    <img src="assets/logo-text.png" alt="Maria Eduarda Benedito · Psicóloga" />
+  </a>
+  <nav class="nav__links" aria-label="Navegação principal">
+    <a href="#terapia">A terapia</a>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#andorinha">A andorinha</a>
+    <a href="#processo">Como funciona</a>
+  </nav>
+  <a href="#contato" class="btn btn--soft nav__cta">Agendar conversa</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <span class="cloud cloud--white cloud--a" data-parallax="0.16"></span>
+    <span class="cloud cloud--blue cloud--b" data-parallax="0.30"></span>
+    <span class="cloud cloud--white cloud--c" data-parallax="0.12"></span>
+    <span class="cloud cloud--blue cloud--j" data-parallax="0.24"></span>
+    <span class="cloud cloud--white cloud--k" data-parallax="0.20"></span>
+
+    <img class="hero__bird" id="heroBird" src="assets/bird.png" alt="Ilustração de uma andorinha em voo" />
+
+    <div class="hero__inner">
+      <p class="script hero__script reveal">um respiro para a sua mente</p>
+      <span class="chip reveal" data-d="1">Psicóloga · CRP 04/72818</span>
+      <h1 class="hero__title reveal" data-d="2">
+        Um lugar tranquilo<br />para cuidar de <em>quem você é</em>.
+      </h1>
+      <p class="hero__lead reveal" data-d="3">
+        Algumas dores pesam em silêncio. Aqui elas ganham espaço para serem ditas —
+        no seu tempo, sem julgamentos e com o acolhimento de quem caminha ao seu lado.
+      </p>
+      <div class="hero__cta reveal" data-d="4">
+        <a href="#contato" class="btn btn--primary">Agendar uma conversa</a>
+        <a href="#terapia" class="btn btn--ghost">Conhecer o processo</a>
+      </div>
+      <p class="hero__note reveal" data-d="5">
+        <span class="dot-led"></span> Atendimento online e presencial
+      </p>
+    </div>
+
+    <a class="hero__scroll" href="#confianca" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== REASSURANCE STRIP ===================== -->
+  <section class="trust" id="confianca">
+    <ul class="trust__list">
+      <li class="reveal"><span class="trust__ico">✿</span> Acolhimento sem julgamentos</li>
+      <li class="reveal" data-d="1"><span class="trust__ico">❀</span> No seu tempo</li>
+      <li class="reveal" data-d="2"><span class="trust__ico">✿</span> Sigilo absoluto</li>
+      <li class="reveal" data-d="3"><span class="trust__ico">❀</span> Online &amp; presencial</li>
+    </ul>
+  </section>
+
+  <!-- ===================== A TERAPIA ===================== -->
+  <section class="section terapia" id="terapia">
+    <span class="cloud cloud--white cloud--d" data-parallax="0.22"></span>
+    <span class="cloud cloud--blue cloud--d2" data-parallax="0.14"></span>
+    <div class="wrap">
+      <header class="head reveal">
+        <p class="eyebrow">A psicoterapia e o trabalho analítico</p>
+        <h2 class="h2">Falar daquilo que dói não é fácil.<br /><em>Mas pode ser mais leve.</em></h2>
+      </header>
+
+      <div class="terapia__grid">
+        <div class="terapia__text">
+          <p class="reveal">
+            A psicoterapia é um processo guiado por uma profissional especialista, e que envolve
+            o trabalho de ambas as partes. Afinal, não é simples falar das nossas dores. No entanto,
+            tudo se torna mais simples quando existe o comprometimento com a busca por algo novo —
+            diferente do sofrimento já conhecido.
+          </p>
+          <p class="reveal" data-d="1">
+            Assim, as sessões se tornam um espaço de acolhimento, mas também de transformação: a partir
+            do que se fala, e do que se constrói daquilo que se escuta.
+          </p>
+        </div>
+        <aside class="quote reveal" data-d="1">
+          <span class="quote__mark">“</span>
+          <p>
+            Não há fórmulas mágicas — apenas o trabalho em conjunto e o compromisso de encontrar
+            um caminho possível para você, com as dores e as alegrias de uma vida mais autêntica,
+            em consonância com os seus próprios desejos.
+          </p>
+        </aside>
+      </div>
+      <div class="sec-cta reveal" data-d="1">
+        <a href="#contato" class="btn btn--primary">Agendar uma conversa</a>
+        <span class="sec-cta__hint">Sem compromisso · no seu tempo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE MIM ===================== -->
+  <section class="section sobre" id="sobre">
+    <div class="wrap sobre__grid">
+      <div class="sobre__media reveal">
+        <div class="sobre__frame">
+          <img src="assets/about.jpg" alt="Maria Eduarda Benedito, psicóloga" />
+          <span class="sobre__leaf"></span>
+        </div>
+        <img class="sobre__bird" src="assets/bird.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="sobre__body">
+        <p class="eyebrow reveal">Prazer, sou a Maria Eduarda</p>
+        <h2 class="h2 reveal" data-d="1">Uma escuta cuidadosa,<br />feita no seu ritmo.</h2>
+        <p class="reveal" data-d="2">
+          Acredito numa clínica que respeita o tempo de cada pessoa. Meu trabalho é oferecer um
+          espaço seguro onde você possa se ouvir com gentileza, compreender as suas dores e descobrir
+          caminhos para uma vida mais autêntica — mais próxima daquilo que você deseja.
+        </p>
+        <p class="reveal" data-d="3">
+          Aqui não há respostas prontas. Há presença, escuta e o cuidado de construir, juntos, um
+          movimento possível na direção da sua liberdade.
+        </p>
+        <p class="signature reveal" data-d="4">Maria Eduarda Benedito</p>
+        <span class="chip chip--line reveal" data-d="4">Psicóloga · CRP 04/72818</span>
+        <div class="sec-cta sec-cta--left reveal" data-d="5">
+          <a href="#contato" class="btn btn--primary">Quero conversar com você</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== A ANDORINHA ===================== -->
+  <section class="section andorinha" id="andorinha">
+    <span class="cloud cloud--white cloud--e" data-parallax="0.28"></span>
+    <span class="cloud cloud--blue cloud--f" data-parallax="0.16"></span>
+    <span class="cloud cloud--blue cloud--e2" data-parallax="0.20"></span>
+    <div class="wrap andorinha__inner">
+      <img class="andorinha__icon reveal" src="assets/logo-icon.png" alt="Andorinha em voo deixando um rastro de pontos" />
+      <p class="eyebrow reveal" data-d="1">A simbologia da andorinha</p>
+      <h2 class="h2 reveal" data-d="2">
+        A fragilidade aparente<br />não impede o <em>voo</em>.
+      </h2>
+      <p class="andorinha__text reveal" data-d="3">
+        São aves migratórias que voam alto e fluem conforme as condições de cada ambiente.
+        Animais pequenos, mas que servem como um lembrete: uma aparente fragilidade não impede
+        movimentos em busca de liberdade, construção e autonomia.
+      </p>
+      <div class="sec-cta reveal" data-d="4">
+        <a href="#contato" class="btn btn--ghost">Começar a minha jornada</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section class="section processo" id="processo">
+    <span class="cloud cloud--white cloud--p" data-parallax="0.18"></span>
+    <span class="cloud cloud--blue cloud--p2" data-parallax="0.26"></span>
+    <div class="wrap">
+      <header class="head reveal">
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="h2">Começar é mais simples<br /><em>do que parece.</em></h2>
+      </header>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <h3>O primeiro contato</h3>
+          <p>Você envia uma mensagem. Conversamos sobre o que te traz aqui e tiramos suas dúvidas, sem nenhum compromisso.</p>
+        </li>
+        <li class="step reveal" data-d="1">
+          <span class="step__num">02</span>
+          <h3>Nossa primeira sessão</h3>
+          <p>Um encontro para nos conhecermos, no seu ritmo. Você fala o quanto se sentir à vontade — sem pressa.</p>
+        </li>
+        <li class="step reveal" data-d="2">
+          <span class="step__num">03</span>
+          <h3>O seu espaço, no seu tempo</h3>
+          <p>Encontros regulares, online ou presenciais, para construirmos juntos um caminho possível para você.</p>
+        </li>
+      </ol>
+      <div class="sec-cta reveal" data-d="2">
+        <a href="#contato" class="btn btn--primary">Dar o primeiro passo</a>
+        <span class="sec-cta__hint">A primeira conversa é leve — e sua.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEMAS / PARA QUEM ===================== -->
+  <section class="section temas" id="temas">
+    <span class="cloud cloud--white cloud--g" data-parallax="0.20"></span>
+    <span class="cloud cloud--blue cloud--g2" data-parallax="0.12"></span>
+    <div class="wrap">
+      <header class="head reveal">
+        <p class="eyebrow">Posso te acompanhar</p>
+        <h2 class="h2">Se algo dentro de você<br /><em>pede atenção, há espaço aqui.</em></h2>
+      </header>
+      <ul class="temas__grid">
+        <li class="reveal">Ansiedade e angústia</li>
+        <li class="reveal" data-d="1">Autoconhecimento</li>
+        <li class="reveal" data-d="2">Relacionamentos</li>
+        <li class="reveal" data-d="1">Autoestima</li>
+        <li class="reveal" data-d="2">Lutos e transições</li>
+        <li class="reveal" data-d="3">Estresse e esgotamento</li>
+      </ul>
+      <div class="sec-cta reveal" data-d="2">
+        <a href="#contato" class="btn btn--primary">Quero conversar sobre isso</a>
+        <span class="sec-cta__hint">Você não precisa ter as palavras certas para começar.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="section cta" id="contato">
+    <span class="cloud cloud--h" data-parallax="0.24"></span>
+    <span class="cloud cloud--i" data-parallax="0.14"></span>
+    <div class="wrap cta__inner">
+      <img class="cta__bird" src="assets/bird.png" alt="" aria-hidden="true" />
+      <p class="script cta__script reveal">o primeiro passo</p>
+      <h2 class="h2 reveal" data-d="1">Que tal começarmos<br />essa conversa?</h2>
+      <p class="cta__lead reveal" data-d="2">
+        Você não precisa carregar tudo sozinho. Vamos conversar — no seu tempo, com leveza,
+        e no ritmo que fizer sentido para você.
+      </p>
+      <div class="cta__buttons reveal" data-d="3">
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Maria%20Eduarda!%20Gostaria%20de%20agendar%20uma%20conversa." class="btn btn--primary" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+        <a href="mailto:contato@mariaeduardabenedito.com.br" class="btn btn--ghost">Enviar um e-mail</a>
+      </div>
+      <p class="cta__note reveal" data-d="4"><span class="dot-led"></span> Sigilo absoluto · CRP 04/72818</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <a class="foot__logo-link" href="#top" aria-label="Voltar ao topo">
+      <img class="foot__logo" src="assets/logo-text.png" alt="Maria Eduarda Benedito · Psicóloga" />
+    </a>
+    <nav class="foot__nav" aria-label="Rodapé">
+      <a href="#terapia">A terapia</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#andorinha">A andorinha</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#contato">Agendar</a>
+    </nav>
+    <p class="foot__meta">
+      Maria Eduarda Benedito · Psicóloga · CRP 04/72818<br />
+      <span>Feito com cuidado — voe leve. 🕊️</span>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

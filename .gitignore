@@ -1,0 +1,11 @@
+# Configuração local do Claude Code / preview
+.claude/
+*.log
+
+# Dependências
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
