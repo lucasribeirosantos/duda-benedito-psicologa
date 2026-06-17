@@ -149,7 +149,7 @@ a{ color:inherit; text-decoration:none; }
   padding:.5em 1.1em; border-radius:999px;
   backdrop-filter:blur(4px);
 }
-.chip--line{ background:transparent; color:var(--purple); border-color:rgba(128,104,143,.32); }
+.chip--line{ background:transparent; color:var(--purple); border-color:rgba(128,104,143,.32); margin:0 .45rem .45rem 0; }
 
 .dot-led{
   display:inline-block; width:7px; height:7px; border-radius:50%;
@@ -167,6 +167,41 @@ a{ color:inherit; text-decoration:none; }
 }
 .sec-cta--left{ align-items:flex-start; margin-top:1.6rem; }
 .sec-cta__hint{ font-size:.9rem; color:var(--ink-soft); font-weight:600; max-width:42ch; }
+
+/* ---------- WhatsApp ---------- */
+.ico-wa{ width:1.15em; height:1.15em; fill:currentColor; flex:0 0 auto; }
+.nav__cta .ico-wa{ fill:#25d366; }
+.btn--wa{ background:linear-gradient(135deg,#25d366,#1da955); box-shadow:0 14px 30px -14px rgba(37,211,102,.6); }
+.btn--wa:hover{ box-shadow:0 18px 36px -16px rgba(37,211,102,.55), 0 0 0 5px rgba(37,211,102,.22); }
+.btn--wa::after{ background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.4) 50%, transparent 70%); }
+
+.cta__phone{ margin:1.1rem 0 0; }
+.cta__phone a{ font-weight:700; color:var(--blue-deep); letter-spacing:.01em; border-bottom:1px solid rgba(31,95,132,.3); padding-bottom:1px; transition:color .4s var(--ease), border-color .4s var(--ease); }
+.cta__phone a:hover{ color:var(--purple-deep); border-color:var(--purple); }
+.foot__wa{ color:var(--purple); font-weight:700; }
+.foot__wa:hover{ text-decoration:underline; }
+
+/* botão flutuante sempre visível */
+.wa-float{
+  position:fixed; right:clamp(16px,3vw,26px); bottom:clamp(16px,3vw,26px); z-index:90;
+  display:inline-flex; align-items:center; gap:.55em;
+  background:#25d366; color:#fff; font-weight:700; font-size:.95rem;
+  padding:.85em 1.25em; border-radius:999px;
+  box-shadow:0 16px 32px -10px rgba(37,211,102,.55);
+  transition:transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.wa-float .ico-wa{ width:22px; height:22px; }
+.wa-float:hover{ transform:translateY(-3px); box-shadow:0 22px 42px -12px rgba(37,211,102,.72); }
+.wa-float::after{
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  animation:waPulse 2.8s var(--ease) infinite;
+}
+@keyframes waPulse{ 0%{ box-shadow:0 0 0 0 rgba(37,211,102,.45) } 70%,100%{ box-shadow:0 0 0 16px rgba(37,211,102,0) } }
+@media (max-width:560px){
+  .wa-float__txt{ display:none; }
+  .wa-float{ padding:.95em; }
+  .wa-float .ico-wa{ width:24px; height:24px; }
+}
 
 /* ============================================================
    NUVENS (detalhe aquarela reutilizável)
