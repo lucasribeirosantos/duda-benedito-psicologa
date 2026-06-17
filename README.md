@@ -21,13 +21,12 @@ tools/          → utilitários de dev (recorte da imagem + servidor local)
 
 > Os arquivos `.ai`, PNGs soltos e a pasta `jpg/` são os fontes da identidade visual.
 
-## ✏️ O que VOCÊ precisa atualizar antes de divulgar
+## Contato
 
-Abra o `index.html` e troque os **placeholders de contato** (na seção `#contato`):
-
-1. **WhatsApp** — procure por `wa.me/5500000000000` e coloque o número real
-   no formato internacional (ex.: `5541999999999`).
-2. **E-mail** — procure por `contato@mariaeduardabenedito.com.br` e troque pelo e-mail real.
+Todo o contato é feito pelo **WhatsApp** `+55 (32) 9935-8700` (atendimento
+exclusivamente online). O link `https://wa.me/553299358700` está em todos os CTAs,
+no cabeçalho e no botão flutuante. Para trocar o número, faça um find-and-replace
+de `553299358700` no `index.html`.
 
 ## Rodar localmente
 
