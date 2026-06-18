@@ -2,6 +2,9 @@
 .claude/
 *.log
 
+# Mensagens de commit temporárias
+COMMIT_MSG.txt
+
 # Dependências
 node_modules/
 
