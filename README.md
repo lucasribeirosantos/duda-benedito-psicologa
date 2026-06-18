@@ -7,17 +7,33 @@ sem build (HTML, CSS e JavaScript puro).
 ## Estrutura
 
 ```
-index.html      → conteúdo e seções (raiz)
+index.html      → conteúdo, metadados SEO/AEO e dados estruturados (JSON-LD)
 styles.css      → design system, cores da identidade, nuvens, animações
 script.js       → loader, andorinha que serpenteia no scroll, parallax, reveals, menu
+robots.txt      → libera indexação + aponta o sitemap
+sitemap.xml     → mapa do site para os buscadores
+vercel.json     → cleanUrls, headers de segurança e cache (deploy na Vercel)
 assets/
   bird.png      → andorinha recortada (loader + detalhes flutuantes)
   logo-icon.png → andorinha + rastro de pontos (seção "A andorinha")
   logo-text.png → logo só texto (cabeçalho e rodapé)
   logo-full.png → logo completa
   about.jpg     → foto da psicóloga (seção "Sobre mim")
-tools/          → utilitários de dev (recorte da imagem + servidor local)
+  og-cover.png  → imagem 1200x630 de compartilhamento (Open Graph/Twitter)
+tools/          → utilitários de dev (recorte da imagem, gerador do OG, servidor local)
 ```
+
+## Domínio e SEO/AEO
+
+- Domínio: **https://mariaeduardabenedito.com.br** (hospedado na Vercel).
+- Title, meta description, canonical, Open Graph e Twitter Card completos.
+- Dados estruturados Schema.org (`ProfessionalService`, `Person` com CRP, `WebSite` e
+  `FAQPage`) — favorecem rich results e motores de resposta (AEO).
+- Seção de **FAQ** visível (em sincronia com o JSON-LD) e `robots.txt` + `sitemap.xml`.
+- Imagens abaixo da dobra com `loading="lazy"`; fontes com `display=swap` e `preconnect`.
+
+> Se o domínio mudar, atualize as URLs absolutas no `<head>` do `index.html`
+> (canonical, og:url, og:image), no `robots.txt` e no `sitemap.xml`.
 
 > Os arquivos `.ai`, PNGs soltos e a pasta `jpg/` são os fontes da identidade visual.
 
