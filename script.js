@@ -25,7 +25,9 @@
       finished = true;
       loader.classList.add("is-done");
       document.body.classList.remove("is-locked");
-      setTimeout(() => { loader.style.display = "none"; document.dispatchEvent(new Event("reveal:start")); }, 900);
+      /* conteúdo entra durante o fade do loader (cross-fade, sem corte) */
+      document.dispatchEvent(new Event("reveal:start"));
+      setTimeout(() => { loader.style.display = "none"; }, 900);
     }
 
     if (reduce) { done(); return; }
